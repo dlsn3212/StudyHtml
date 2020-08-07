@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <title>jQuery exam</title>
+        <script src="js/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                //01. selector
+                $("h1").css("color","rgb(255,255,255)");
+                $("h1").css("background-color","black");
+
+                //02. attribute(js getAttribute)
+                var src = $("script").attr("src");
+                alert("jquery link = " + src);
+
+                //03. attr set
+                var img = $("img");
+                img.css("width","320px");       //style은 css가 좋음
+                img.css("height","200px");
+                img.attr("src","http://placehold.it/320x200");
+                //img.attr("width","500px");
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Heading 1st</h1>
+        <h1>Heading 2nd</h1>
+        <h1>Heading 3rd</h1>
+
+        <img style="width: 30px; height: 20px;"/>
+        <img style="width: 30px; height: 20px;"/>
+    </body>
+
+</html>

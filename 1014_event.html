@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>이벤트 예제</title>
+        <script>
+            window.onload = function(){
+                var button = document.getElementById("button1");
+                // button.onclick = function(){
+                //     alert("익명함수 콜");
+                // }
+                button.onclick = buttonClick;
+
+                var link = document.getElementById("link");
+                link.onclick = function(){
+                    return false;
+                }
+            }
+            function buttonClick() {
+                alert("20200807");
+            }
+        </script>
+    </head>
+    <body>
+        <input id="button1" type = button value="입력"/>
+        <button value="버튼" onclick="alert('두번째');">두번째</button>
+    </body>
+</html>
